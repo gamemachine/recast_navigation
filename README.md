@@ -1,7 +1,7 @@
 # recast_navigation
 Rust wrappers for recast navigation
 
-[![Cargo](https://img.shields.io/crates/v/crossbeam.svg)](
+[![Cargo](https://img.shields.io/crates/v/recast_navigation.svg)](
 https://crates.io/crates/recast_navigation)
 [![Documentation](https://docs.rs/recast_navigation/badge.svg)](
 https://docs.rs/recast_navigation)
