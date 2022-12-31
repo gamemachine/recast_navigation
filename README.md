@@ -46,3 +46,10 @@ You call NavQuery.get_location with a position that is on the path, which return
 ## Crowds
 Detour crowd is decent but it's the one area of recast that people usually customize or just roll their own.
 Don't expect it's behavior to match what engines like UE or Unity provide, as they have heavily customized detour crowd over time.
+
+## Navmesh display
+NavmeshTile has a get_tile_vertices function that returns a standard pair of indices/vertices to display as a mesh.
+
+## Rapier integration
+ShapeToMesh has some basic functionality for extracting geometry from Rapier shapes that you can feed
+to TileInputBuilder
