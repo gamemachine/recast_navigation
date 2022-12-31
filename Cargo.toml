@@ -1,7 +1,8 @@
 [package]
 name = "recast_navigation"
 authors = ["Chris Ochs <chris@ochsnet.com>"]
-description = "Rust wrappers around a high level C++ wrapper for recast navigation"
+repository = "https://github.com/gamemachine/recast_navigation"
+description = "Rust wrappers for recast navigation"
 categories = [ "pathfinding", "game-development", "navigation mesh"]
 version = "0.1.0"
 edition = "2021"
