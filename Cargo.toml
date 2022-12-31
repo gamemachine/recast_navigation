@@ -1,0 +1,24 @@
+[package]
+name = "recast_navigation"
+authors = ["Chris Ochs <chris@ochsnet.com>"]
+description = "Rust wrappers around a high level C++ wrapper for recast navigation"
+categories = [ "pathfinding", "game-development", "navigation mesh"]
+version = "0.1.0"
+edition = "2021"
+readme = "README.md"
+license = "MIT"
+
+build = "build.rs"
+
+[lib]
+name="recast_navigation"
+crate-type = ["rlib"]
+
+
+[dependencies]
+libc = "0.2"
+rustc-hash = "1"
+crossbeam = "0.8"
+
+rapier3d-f64 = { version = "0.16", features = [ "simd-stable" ] }
+meshopt = "0.1"
