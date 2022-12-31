@@ -1,6 +1,11 @@
 # recast_navigation
 Rust wrappers for recast navigation
 
+[![Cargo](https://img.shields.io/crates/v/crossbeam.svg)](
+https://crates.io/crates/recast_navigation)
+[![Documentation](https://docs.rs/recast_navigation/badge.svg)](
+https://docs.rs/recast_navigation)
+
 This is a wrapper over a higher level C++ wrapper for recast navigation.  So the rust side is fairly high level.
 Supports recast, detour, and detour crowd to varying degrees.  Some functionality like offmesh links are not
 supported.  
@@ -19,7 +24,7 @@ If you build from source you will want to copy the shared libs cmake creates int
 * Take those tiles and call NavmeshBuildUtils::calculate_tile_bounding_box on each tile to get the tile bounds.
 * Create a TileInputBuilder for each tile.
 * Gather the geometry for the tile bounds and feed it to the TileInputBuilder.
-* NavmeshBuilder has a built_tile function that takes a TileInputBuilder. Single builder can build multiple tiles.
+* NavmeshBuilder has a build_tile function that takes a TileInputBuilder. Single builder can build multiple tiles.
 * Add the tiles to the navmesh
 
 Tile building is completely separate from the navmesh. So you can build tiles in the background at runtime,
